@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Results</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>Top Matching Job Roles</h1>
+
+{{ table|safe }}
+
+<a href="/">Analyze Another Resume</a>
+
+</div>
+
+</body>
+</html>

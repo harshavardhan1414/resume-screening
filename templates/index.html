@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Resume Role Predictor</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>AI Resume Job Role Matcher</h1>
+
+<form action="/predict" method="POST" enctype="multipart/form-data">
+
+<label>Upload Resume (PDF / DOCX / TXT)</label>
+
+<input type="file" name="resume" required>
+
+<button type="submit">Analyze Resume</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
